@@ -172,6 +172,11 @@ For more information on the project, filing bug reports and feature requests, an
 
 ---
 
+## License
+
+See [LICENSE][stdlib-license].
+
+
 ## Copyright
 
 Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
@@ -187,8 +192,8 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/blas-ext-base-ndarray-snansumkbn.svg
 [npm-url]: https://npmjs.org/package/@stdlib/blas-ext-base-ndarray-snansumkbn
 
-[test-image]: https://github.com/stdlib-js/blas-ext-base-ndarray-snansumkbn/actions/workflows/test.yml/badge.svg?branch=v0.1.0
-[test-url]: https://github.com/stdlib-js/blas-ext-base-ndarray-snansumkbn/actions/workflows/test.yml?query=branch:v0.1.0
+[test-image]: https://github.com/stdlib-js/blas-ext-base-ndarray-snansumkbn/actions/workflows/test.yml/badge.svg?branch=main
+[test-url]: https://github.com/stdlib-js/blas-ext-base-ndarray-snansumkbn/actions/workflows/test.yml?query=branch:main
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/blas-ext-base-ndarray-snansumkbn/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/blas-ext-base-ndarray-snansumkbn?branch=main
@@ -217,6 +222,8 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 [esm-url]: https://github.com/stdlib-js/blas-ext-base-ndarray-snansumkbn/tree/esm
 [esm-readme]: https://github.com/stdlib-js/blas-ext-base-ndarray-snansumkbn/blob/esm/README.md
 [branches-url]: https://github.com/stdlib-js/blas-ext-base-ndarray-snansumkbn/blob/main/branches.md
+
+[stdlib-license]: https://raw.githubusercontent.com/stdlib-js/blas-ext-base-ndarray-snansumkbn/main/LICENSE
 
 [@neumaier:1974a]: https://doi.org/10.1002/zamm.19740540106
 
