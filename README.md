@@ -41,38 +41,32 @@ limitations under the License.
 
 <!-- /.intro -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/blas-ext-base-ndarray-snansumkbn
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-snansumkbn = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-ext-base-ndarray-snansumkbn@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var snansumkbn = require( 'path/to/vendor/umd/blas-ext-base-ndarray-snansumkbn/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/blas-ext-base-ndarray-snansumkbn@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.snansumkbn;
-})();
-</script>
+var snansumkbn = require( '@stdlib/blas-ext-base-ndarray-snansumkbn' );
 ```
 
 #### snansumkbn( arrays )
@@ -114,18 +108,13 @@ The function has the following parameters:
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-base-bernoulli@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-base-discrete-uniform@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-filled-by@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-ctor@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-to-array@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/blas-ext-base-ndarray-snansumkbn@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var bernoulli = require( '@stdlib/random-base-bernoulli' );
+var discreteUniform = require( '@stdlib/random-base-discrete-uniform' );
+var filledarrayBy = require( '@stdlib/array-filled-by' );
+var ndarray = require( '@stdlib/ndarray-base-ctor' );
+var ndarray2array = require( '@stdlib/ndarray-to-array' );
+var snansumkbn = require( '@stdlib/blas-ext-base-ndarray-snansumkbn' );
 
 function clbk() {
     if ( bernoulli( 0.7 ) > 0 ) {
@@ -140,11 +129,6 @@ console.log( ndarray2array( x ) );
 
 var v = snansumkbn( [ x ] );
 console.log( v );
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -187,6 +171,11 @@ For more information on the project, filing bug reports and feature requests, an
 [![Chat][chat-image]][chat-url]
 
 ---
+
+## License
+
+See [LICENSE][stdlib-license].
+
 
 ## Copyright
 
@@ -233,6 +222,8 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 [esm-url]: https://github.com/stdlib-js/blas-ext-base-ndarray-snansumkbn/tree/esm
 [esm-readme]: https://github.com/stdlib-js/blas-ext-base-ndarray-snansumkbn/blob/esm/README.md
 [branches-url]: https://github.com/stdlib-js/blas-ext-base-ndarray-snansumkbn/blob/main/branches.md
+
+[stdlib-license]: https://raw.githubusercontent.com/stdlib-js/blas-ext-base-ndarray-snansumkbn/main/LICENSE
 
 [@neumaier:1974a]: https://doi.org/10.1002/zamm.19740540106
 
