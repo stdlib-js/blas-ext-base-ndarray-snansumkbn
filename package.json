@@ -45,13 +45,14 @@
     "@stdlib/types": "^0.4.3"
   },
   "devDependencies": {
-    "@stdlib/array-filled-by": "^0.3.1",
     "@stdlib/array-float32": "^0.2.3",
     "@stdlib/math-base-assert-is-nanf": "^0.2.3",
     "@stdlib/math-base-assert-is-positive-zerof": "^0.1.4",
     "@stdlib/math-base-special-pow": "^0.3.1",
     "@stdlib/ndarray-base-ctor": "^0.3.1",
+    "@stdlib/ndarray-fill-by": "^0.1.1",
     "@stdlib/ndarray-to-array": "^0.2.2",
+    "@stdlib/ndarray-zeros": "^0.3.1",
     "@stdlib/random-base-bernoulli": "^0.2.2",
     "@stdlib/random-base-discrete-uniform": "^0.2.2",
     "@stdlib/random-base-uniform": "^0.2.3",

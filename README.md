@@ -74,11 +74,9 @@ var snansumkbn = require( '@stdlib/blas-ext-base-ndarray-snansumkbn' );
 Computes the sum of a one-dimensional single-precision floating-point ndarray, ignoring `NaN` values and using an improved Kahan–Babuška algorithm.
 
 ```javascript
-var Float32Array = require( '@stdlib/array-float32' );
-var ndarray = require( '@stdlib/ndarray-base-ctor' );
+var Float32Vector = require( '@stdlib/ndarray-vector-float32' );
 
-var xbuf = new Float32Array( [ 1.0, -2.0, NaN, 2.0 ] );
-var x = new ndarray( 'float32', xbuf, [ 4 ], [ 1 ], 0, 'row-major' );
+var x = new Float32Vector( [ 1.0, -2.0, NaN, 2.0 ] );
 
 var v = snansumkbn( [ x ] );
 // returns 1.0
@@ -111,8 +109,8 @@ The function has the following parameters:
 ```javascript
 var bernoulli = require( '@stdlib/random-base-bernoulli' );
 var discreteUniform = require( '@stdlib/random-base-discrete-uniform' );
-var filledarrayBy = require( '@stdlib/array-filled-by' );
-var ndarray = require( '@stdlib/ndarray-base-ctor' );
+var fillBy = require( '@stdlib/ndarray-fill-by' );
+var zeros = require( '@stdlib/ndarray-zeros' );
 var ndarray2array = require( '@stdlib/ndarray-to-array' );
 var snansumkbn = require( '@stdlib/blas-ext-base-ndarray-snansumkbn' );
 
@@ -123,8 +121,10 @@ function clbk() {
     return NaN;
 }
 
-var xbuf = filledarrayBy( 10, 'float32', clbk );
-var x = new ndarray( 'float32', xbuf, [ xbuf.length ], [ 1 ], 0, 'row-major' );
+var opts = {
+    'dtype': 'float32'
+};
+var x = fillBy( zeros( [ 10 ], opts ), clbk );
 console.log( ndarray2array( x ) );
 
 var v = snansumkbn( [ x ] );
@@ -172,11 +172,6 @@ For more information on the project, filing bug reports and feature requests, an
 
 ---
 
-## License
-
-See [LICENSE][stdlib-license].
-
-
 ## Copyright
 
 Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
@@ -222,8 +217,6 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 [esm-url]: https://github.com/stdlib-js/blas-ext-base-ndarray-snansumkbn/tree/esm
 [esm-readme]: https://github.com/stdlib-js/blas-ext-base-ndarray-snansumkbn/blob/esm/README.md
 [branches-url]: https://github.com/stdlib-js/blas-ext-base-ndarray-snansumkbn/blob/main/branches.md
-
-[stdlib-license]: https://raw.githubusercontent.com/stdlib-js/blas-ext-base-ndarray-snansumkbn/main/LICENSE
 
 [@neumaier:1974a]: https://doi.org/10.1002/zamm.19740540106
 
