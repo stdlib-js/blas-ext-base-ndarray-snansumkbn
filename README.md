@@ -48,6 +48,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import snansumkbn from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-ext-base-ndarray-snansumkbn@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/blas-ext-base-ndarray-snansumkbn/tags). For example,
+
+```javascript
 import snansumkbn from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-ext-base-ndarray-snansumkbn@v0.1.0-esm/index.mjs';
 ```
 
@@ -99,7 +104,7 @@ import discreteUniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-d
 import fillBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-fill-by@esm/index.mjs';
 import zeros from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-zeros@esm/index.mjs';
 import ndarray2array from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-to-array@esm/index.mjs';
-import snansumkbn from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-ext-base-ndarray-snansumkbn@v0.1.0-esm/index.mjs';
+import snansumkbn from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-ext-base-ndarray-snansumkbn@esm/index.mjs';
 
 function clbk() {
     if ( bernoulli( 0.7 ) > 0 ) {
