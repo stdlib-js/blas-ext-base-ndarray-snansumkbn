@@ -16,12 +16,23 @@
 
 <!-- /.features -->
 
+<section class="bug-fixes">
+
+### Bug Fixes
+
+-   [`ebbf2de`](https://github.com/stdlib-js/stdlib/commit/ebbf2de9f235cc98990c0cd3b020beac567667fa) - pass const qualified views [(#14052)](https://github.com/stdlib-js/stdlib/pull/14052)
+
+</section>
+
+<!-- /.bug-fixes -->
+
 <section class="commits">
 
 ### Commits
 
 <details>
 
+-   [`ebbf2de`](https://github.com/stdlib-js/stdlib/commit/ebbf2de9f235cc98990c0cd3b020beac567667fa) - **fix:** pass const qualified views [(#14052)](https://github.com/stdlib-js/stdlib/pull/14052) _(by Philipp Burckhardt, Athan Reines)_
 -   [`5b355d1`](https://github.com/stdlib-js/stdlib/commit/5b355d144a03bc354d1eda469d0f263e02146af8) - **feat:** add C implementation for `blas/ext/base/ndarray/snansumkbn` [(#14032)](https://github.com/stdlib-js/stdlib/pull/14032) _(by Atharva Patange)_
 -   [`0f24d0d`](https://github.com/stdlib-js/stdlib/commit/0f24d0d9f742c471f083ad6c00df814e05053d12) - **docs:** update descriptions and comments [(#13451)](https://github.com/stdlib-js/stdlib/pull/13451) _(by Philipp Burckhardt)_
 -   [`4e31b9e`](https://github.com/stdlib-js/stdlib/commit/4e31b9e52d8bbad38424f00c7fbb354f6a7fe177) - **chore:** modernize examples and benchmarks _(by Athan Reines)_
