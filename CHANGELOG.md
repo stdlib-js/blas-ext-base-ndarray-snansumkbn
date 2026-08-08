@@ -4,7 +4,17 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-08-03)
+## Unreleased (2026-08-08)
+
+<section class="features">
+
+### Features
+
+-   [`5b355d1`](https://github.com/stdlib-js/stdlib/commit/5b355d144a03bc354d1eda469d0f263e02146af8) - add C implementation for `blas/ext/base/ndarray/snansumkbn` [(#14032)](https://github.com/stdlib-js/stdlib/pull/14032)
+
+</section>
+
+<!-- /.features -->
 
 <section class="commits">
 
@@ -12,6 +22,7 @@
 
 <details>
 
+-   [`5b355d1`](https://github.com/stdlib-js/stdlib/commit/5b355d144a03bc354d1eda469d0f263e02146af8) - **feat:** add C implementation for `blas/ext/base/ndarray/snansumkbn` [(#14032)](https://github.com/stdlib-js/stdlib/pull/14032) _(by Atharva Patange)_
 -   [`0f24d0d`](https://github.com/stdlib-js/stdlib/commit/0f24d0d9f742c471f083ad6c00df814e05053d12) - **docs:** update descriptions and comments [(#13451)](https://github.com/stdlib-js/stdlib/pull/13451) _(by Philipp Burckhardt)_
 -   [`4e31b9e`](https://github.com/stdlib-js/stdlib/commit/4e31b9e52d8bbad38424f00c7fbb354f6a7fe177) - **chore:** modernize examples and benchmarks _(by Athan Reines)_
 -   [`df6fbe8`](https://github.com/stdlib-js/stdlib/commit/df6fbe8072b04fc62d2cf41a1f54f68c73acc58f) - **bench:** refactor to use string interpolation in `blas/ext/base` [(#11379)](https://github.com/stdlib-js/stdlib/pull/11379) _(by Karan Anand)_
@@ -26,9 +37,10 @@
 
 ### Contributors
 
-A total of 3 people contributed to this release. Thank you to the following contributors:
+A total of 4 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
+-   Atharva Patange
 -   Karan Anand
 -   Philipp Burckhardt
 
