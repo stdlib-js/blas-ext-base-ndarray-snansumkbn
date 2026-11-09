@@ -1,7 +1,7 @@
-/**
+/*
 * @license Apache-2.0
 *
-* Copyright (c) 2026 The Stdlib Authors.
+* Copyright (c) 2025 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -16,25 +16,35 @@
 * limitations under the License.
 */
 
-#ifndef STDLIB_BLAS_EXT_BASE_NDARRAY_SNANSUMKBN_H
-#define STDLIB_BLAS_EXT_BASE_NDARRAY_SNANSUMKBN_H
+// TypeScript Version: 4.1
 
-#include "stdlib/ndarray/ctor.h"
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@esm/index.d.ts"/>
 
-/*
-* If C++, prevent name mangling so that the compiler emits a binary file having undecorated names, thus mirroring the behavior of a C compiler.
-*/
-#ifdef __cplusplus
-extern "C" {
-#endif
+import { float32ndarray } from '@stdlib/types/ndarray';
 
 /**
 * Computes the sum of a one-dimensional single-precision floating-point ndarray, ignoring `NaN` values and using an improved Kahan–Babuška algorithm.
+*
+* ## Notes
+*
+* -   The function expects the following ndarrays:
+*
+*     -   a one-dimensional input ndarray.
+*
+* @param arrays - array-like object containing ndarrays
+* @returns sum
+*
+* @example
+* var Float32Vector = require( '@stdlib/ndarray-vector-float32' );
+*
+* var x = new Float32Vector( [ 1.0, -2.0, NaN, 2.0 ] );
+*
+* var v = snansumkbn( [ x ] );
+* // returns 1.0
 */
-float stdlib_blas_ext_snansumkbn( const struct ndarray *arrays[] );
+declare function snansumkbn( arrays: [ float32ndarray ] ): number;
 
-#ifdef __cplusplus
-}
-#endif
 
-#endif // !STDLIB_BLAS_EXT_BASE_NDARRAY_SNANSUMKBN_H
+// EXPORTS //
+
+export = snansumkbn;
